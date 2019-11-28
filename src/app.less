@@ -1,0 +1,184 @@
+@font-face {
+    font-family: "iconfont";
+    src: url('./static/font/iconfont.eot'); /* IE9 */
+    src: url('./static/font/iconfont.eot') format('embedded-opentype'),
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAKoAAsAAAAABqwAAAJbAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqBFIEVATYCJAMMCwgABCAFhG0HNhvbBRHVi3OyHwe5KfOW5OMqpt+EqrHv8fD9fua5/738JEvktsySENXaArGqkBWyHd+OLzsg1anO1pwj9UZFqJLs+c6jLyQPnGb08kikDwALAqtraSP5fOLe6W8BBTKfZbnMsfxTF2AXBhTgWIsiK5FAvKV2ESeVF/TqOIEmg0wQC6eVG9VkaFwgTtoj+9Q6EVlO8jWhnFiaxX0VteJG8Rb35Pfjt2lRo1BJ0NS1hxcdNPebb33pfOO8nZwQJfirK0iYgEzsnsxslUTCTJo0ebm8lIXirHijgZTUuvKlf7yCKKHaFjDGzxZ8Q/kE3/pWKEACZTc3AlMDRs8NIbq6Tt3CQ08WHHw8r/nI4af9fUgIrevZvlOimQGH0pCWF+fqhTDldGFUwyLVgZeDp/ruBY2vSRoqf1a8SUMEgl13Mva0z/xfa87g/b8lHz1P42uG29S+4A3+mBTYlGs5sqZcSqik9SVdAFeBL0r9GlCgy5f9ul5wI6Gmd4evqt8iqRlByYwJqGg2A6WaOWgy3pLVzboNSCLXMc4VD6HDKxTavEbS4R0lMz6jos9flDoigW+yObq3bDYqrFrAOAtusPzBrjkRsYtS9TfU7zCzK5esF/Ju49A3XT9/xYR8xoz9owcRAuIcYfJOwxAyFM4OV2mMSBnblqbe1Kw5HpQFGJoJtAGLP2CtsoR4e6EGn79B2lsw4wXSSvAFsZ3tHfQaHYBy1SQQ6Vte2X1oAyEIICyLwOQNQkGQgTI9yEEr0TA7UsWoxa0Iqmnu18X/2wVN0H4pikiRVQasNnI5iSSHAwA=') format('woff2'),
+    url('./static/font/iconfont.woff') format('woff'),
+    url('./static/font/iconfont.ttf') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('./static/font/iconfont.svg') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 30rpx;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.iconfont-right:before {
+    content: "\e600";
+}
+
+.iconfont-left:before {
+    content: "\e616";
+}
+  
+  
+
+.flex{
+    display: flex;
+}
+.jcsb{
+    justify-content: space-between;
+}
+.jce{
+    justify-content: flex-end;
+}
+.aic{
+    align-items: center;
+}
+.aie{
+    align-items: flex-end; 
+}
+.jc{
+    justify-content: center;
+}
+.ac{
+    align-items: center;
+}
+.direction{
+    flex-direction: column
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.por{
+    position: relative
+}
+.poa{
+    position: absolute
+}
+.pof{
+    position: fixed
+}
+.hc{
+    .poa;
+    top:50%;
+    transform: translateY(-50%)
+}
+.lc{
+    .poa;
+    left:50%;
+    transform: translateX(-50%)
+}
+.allc{
+    .poa;
+    left:50%;
+    top:50%;
+    transform: translate(-50% -50%);
+}
+
+.fwb(){
+    font-weight: bold;
+}
+.bn{
+    border:none;
+}
+.oh{
+    overflow: hidden;
+}
+//浮动
+.fl{
+    float: left;
+}
+.fr{
+  float: right;
+}
+.cf{
+    &:after{
+        content: "";
+        display: block;
+        height: 0;
+        clear:both;
+        visibility: hidden;
+    }
+}
+
+
+.line(@lines, @line-height: 1.3em) {
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: @lines;
+    overflow: hidden;
+    line-height: @line-height;
+    max-height: @line-height * @lines;
+}
+.truncate{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.bxz{
+    box-sizing: border-box;
+}
+.tac{
+    text-align: center;
+}
+.tal{
+    text-align: left;
+}
+.tar{
+    text-align: right;
+}
+
+button::after{
+    content:'';border:0;
+}
+
+view,
+scroll-view,
+swiper,
+button,
+input,
+textarea,
+label,
+navigator,
+image {
+	box-sizing: border-box;
+}
+
+button{
+    text-decoration:none;
+    -webkit-tap-highlight-color:transparent;
+    overflow:hidden;
+    border-radius:0;
+    &::after{
+        border: none;
+    }
+}
+
+.w100{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.animation-fade {
+    animation-name: fade;
+    animation-duration: .5s;
+    animation-timing-function: linear
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}

@@ -1,0 +1,79 @@
+.line(@lines, @line-height: 1.3em) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @lines;
+  overflow: hidden;
+  line-height: @line-height;
+  max-height: @line-height * @lines;
+}
+page{
+  background: #f2f2f2;
+}
+
+.regist{
+  padding: 20rpx 60rpx;
+  .item{
+    font-size: 32rpx;
+    font-weight: bold;
+    color: #000;
+    width: 50%;
+    .w100{
+      width: 89rpx;
+      height: 89rpx;
+      display: block;
+      margin-right: 30rpx;
+    }
+  }
+}
+
+.index_list{
+  padding: 0 30rpx;
+  .item{
+      width: 100%;
+      padding-bottom: 30rpx;
+  }
+  .info{
+      border: 1rpx solid #999;
+      border-top: none;
+      padding: 20rpx 30rpx 24rpx;
+      .title{
+          font-size: 38rpx;
+          line-height: 1.3;
+          margin-bottom: 8rpx;
+          .line(2,1.3em);
+          color: #333;
+      }
+      .disc{
+          font-size: 26rpx;
+          color: #999999;
+          .line(2,1.3em)
+      }
+  }
+}
+.service{
+  width: 104rpx;
+  height: 104rpx;
+  position: fixed;
+  right: 10rpx;
+  bottom: 100rpx;
+  z-index: 99;
+  .wrap{
+    position: relative;
+    width: 104rpx;
+    height: 104rpx;
+  }
+  .btn{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  .w100{
+      height: 104rpx;
+  }
+}

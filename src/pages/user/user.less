@@ -1,0 +1,83 @@
+.user_top{
+    background: #222;
+    .user_info{
+        padding:27rpx 60rpx 47rpx 60rpx;
+        position: relative;
+        .flex{
+            line-height: 1;
+            margin-left: 30rpx;
+            .fwb{
+                font-size: 28rpx;
+                color: #fff;
+            }
+            .phone{
+                font-size: 26rpx;
+                color: #cccccc;
+                margin-top: 30rpx;
+            }
+        }
+        .setup{
+            width: 62rpx;
+            height: 62rpx;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 90rpx;
+            .icon{
+                width: 62rpx;
+                height: 62rpx;
+            }
+        }
+    }
+    .user_menu{
+        padding: 0 47rpx 15rpx;
+        .item{
+            text-align: center;
+            padding: 0 30rpx;
+            .icon{
+                width: 70rpx;
+                height: 70rpx;
+                padding: 0;
+            }
+            .name{
+                font-size: 24rpx;
+                line-height: 1;
+                color: #fff;
+                display: block;
+                margin-top: 4rpx;
+            }
+        }
+    }
+}
+
+.menu_list{
+    border-top: 30rpx solid #f2f2f2;
+    
+}
+
+.at-accordion{
+    .at-accordion__header{
+        padding: 18rpx 20rpx;
+        .at-accordion__arrow .at-icon{
+            transform: rotate(-90deg);
+        }
+    }
+    &.show{
+        .at-accordion__header .at-accordion__arrow .at-icon{
+            transform: rotate(180deg);
+        }
+    }
+    
+    .at-accordion__info__title{
+        font-size: 32rpx;
+    }
+}
+.at-list__item-container{
+    .item-content__info-title{
+        font-size: 28rpx;
+        color: #666666;
+    }
+}
+.at-list__item::after {
+    width: 700rpx;
+}
